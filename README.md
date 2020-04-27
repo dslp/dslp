@@ -5,3 +5,6 @@ The Data Science Lifecycle Process is an end-to-end process for teams to collabo
 There is a large body of work about the Software Development Lifecycle, which has enabled faster and more reliable release cycles for application development. The Data Science Lifcycle Process seeks to fill this role for the Data Science community.
 
 This repo is for documenting the approach and how to apply it to your own problems.
+
+A repo template for projects following this approach can be found [here](https://github.com/MicrosoftDSST/dslp-repo-template)
+
