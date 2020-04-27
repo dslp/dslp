@@ -2,7 +2,7 @@
 
 The Data Science Lifecycle Process is a set of prescriptive steps and best practices to enable data science teams to consistently deliver value. It includes issue templates for common data science work types, a branching strategy that fits the data science development flow, and prescriptive guidance on how to piece together all the various tools and workflows required to make data science work.
 
-Read the steps [here](steps.md).
+Read about the steps [here](steps.md).  
 A template repository for projects following this process can be found [here](https://github.com/MicrosoftDSST/dslp-repo-template).
 
 ## Why did we create this and why should you adopt it?
