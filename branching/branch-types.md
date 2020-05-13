@@ -11,35 +11,41 @@ Rather than reinventing the wheel, we adapted existing branching strategies to t
 See Also: [Example diagrams of branching patterns](./branching-patterns.pdf)
 
 ## Branch Types
-- [Collaboration Branches](#collaboration-branches)
- - [Master](#master)
- - [Development (Optional)](#development-optional)
-- [Feature and Issue Branches](#feature-and-issue-branches)
- - [Naming Convention](#naming-convention)
-   - [Examples](#examples)
-- [Data Branches](#data-branches)
- - [Naming Convention](#naming-convention-1)
-   - [Examples](#examples-1)
- - [PR Target](#pr-target)
- - [Best Practices](#best-practices)
-- [Explore Branches](#explore-branches)
- - [Naming Convention](#naming-convention-2)
-   - [Examples](#examples-2)
- - [PR Target](#pr-target-1)
- - [Best Practices](#best-practices-1)
-- [Experiment Branches](#experiment-branches)
- - [Naming Convention](#naming-convention-3)
-   - [Examples](#examples-3)
- - [PR Target](#pr-target-2)
-   - [Failed Experiments](#failed-experiments)
-   - [Successful Experiments](#successful-experiments)
- - [Best Practices](#best-practices-2)
-   - [Create New Feature Branches for Resuable Components](#create-new-feature-branches-for-resuable-components)
-- [Model Branches](#model-branches)
- - [Naming Convention](#naming-convention-4)
-   - [Examples](#examples-4)
- - [PR Target](#pr-target-3)
- - [Best Practices](#best-practices-3)
+- [Branch Types](#branch-types)
+  - [Branch Types](#branch-types-1)
+  - [Collaboration Branches](#collaboration-branches)
+    - [Master](#master)
+    - [Development (Optional)](#development-optional)
+  - [Feature and Issue Branches](#feature-and-issue-branches)
+    - [Naming Convention](#naming-convention)
+      - [Examples](#examples)
+  - [Data Branches](#data-branches)
+    - [Naming Convention](#naming-convention-1)
+      - [Examples](#examples-1)
+    - [PR Target](#pr-target)
+    - [Diagram](#diagram)
+    - [Best Practices](#best-practices)
+  - [Explore Branches](#explore-branches)
+    - [Naming Convention](#naming-convention-2)
+      - [Examples](#examples-2)
+    - [PR Target](#pr-target-1)
+    - [Best Practices](#best-practices-1)
+  - [Experiment Branches](#experiment-branches)
+    - [Naming Convention](#naming-convention-3)
+      - [Examples](#examples-3)
+    - [PR Target](#pr-target-2)
+      - [Failed Experiments](#failed-experiments)
+        - [Diagram](#diagram-1)
+      - [Successful Experiments](#successful-experiments)
+        - [Diagram](#diagram-2)
+    - [Best Practices](#best-practices-2)
+      - [Create New Feature Branches for Resuable Components](#create-new-feature-branches-for-resuable-components)
+  - [Model Branches](#model-branches)
+    - [Naming Convention](#naming-convention-4)
+      - [Examples](#examples-4)
+    - [PR Target](#pr-target-3)
+    - [Diagram](#diagram-3)
+    - [Best Practices](#best-practices-3)
   
 
 ## Collaboration Branches
@@ -87,6 +93,10 @@ Use this branch type for writing data ingestion pipelines for known datasets or 
 ### PR Target
 
 The PR's for your data pipelines should target your collaboration branch.
+
+### Diagram
+
+![data branching example](media/data-branch-pattern.png)
 
 ### Best Practices
 
@@ -147,6 +157,11 @@ Use this branch type for working on and collaborating on experiments. Because yo
 
 If an experiment doesn't pan out, mark the Experiment issue as failed with a label, close the PR without merging and update the Experiment issue with a TLDR explaining what you tried and how it turned out. Link to your experiment tracking tool so that others can view the runs.
 
+##### Diagram
+
+![failed experiment branching pattern](media/experiment-failed-branch-pattern.png)
+)
+
 #### Successful Experiments
 
 If an experiment is successful and you want to start the deployment process:
@@ -158,6 +173,10 @@ If an experiment is successful and you want to start the deployment process:
 4. Change the target of the Experiment PR to the Model branch.
 5. Merge the pull request to your Model branch and close the Experiment Issue.
 6. Delete the experiment branch after merging the PR.
+
+##### Diagram
+
+![successful experiment branch to model branch](media/experiment-success-branch-pattern.png)
 
 ### Best Practices
 
@@ -200,6 +219,10 @@ Use this branch to:
 ### PR Target
 
 Once your model is ready to go, you should merge to your collaboration branch. From there you can use your CD process to deploy your model.
+
+### Diagram
+
+![model branching pattern](media/model-branch-pattern.png)
 
 ### Best Practices
 
