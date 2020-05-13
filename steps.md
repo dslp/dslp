@@ -149,4 +149,4 @@ Keep iterating and switching between these steps until you've solved the problem
 ## Next Steps
 
 - [Review Branching Strategy](./branching/branch-types.md)
-- [Review Issue Types](./issues/0-overview-issue-types.md)
+- [Review Issue Types](./issue-types/0-overview-issue-types.md)
