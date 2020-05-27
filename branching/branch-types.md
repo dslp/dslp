@@ -8,7 +8,7 @@ As part of the Data Science Lifecycle Process we introduce some new branching st
    
 Rather than reinventing the wheel, we adapted existing branching strategies to the needs of the data science lifecyle. For most of the code we write, we'll be able to use standard Feature/Issue branching strategies. For the rest, we created some new branch types and workflows for using them.
 
-See Also: [Example diagrams of branching patterns](./branching-patterns.pdf)
+See Also: [Example diagrams of branching patterns](./media/branching-patterns.pdf)
 
 ## Branch Types
 - [Branch Types](#branch-types)
