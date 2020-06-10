@@ -16,6 +16,7 @@ For more background on what this is and why you should consider adopting it, con
 - [Workflows](steps.md)
 - [Semantic Version of Data Science Assets](semantic-versioning.md)
 - [Labels](labels.md)
+- [Standard Repo Structure](https://github.com/dslp/dslp-repo-template)
 
 ## Why did we create this and why should you adopt it?
 
