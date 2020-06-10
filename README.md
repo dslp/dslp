@@ -5,9 +5,17 @@ The Data Science Lifecycle Process is a set of prescriptive steps and best pract
 ## Getting Started
 
 To get started, you can read about the steps [here](steps.md).  
-A template repository for projects following this process can be found [here](https://github.com/MicrosoftDSST/dslp-repo-template).  
+A template repository for projects following this process can be found [here](https://github.com/dslp/dslp-repo-template).  
 
 For more background on what this is and why you should consider adopting it, continue reading below.
+
+## Key Topics
+
+- [Branching Strategy](branching/branch-types.md)
+- [Issue Templates](issue-types/0-overview-issue-types.md)
+- [Workflows](steps.md)
+- [Semantic Version of Data Science Assets](semantic-versioning.md)
+- [Labels](labels.md)
 
 ## Why did we create this and why should you adopt it?
 
