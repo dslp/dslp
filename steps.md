@@ -122,8 +122,8 @@ Then:
 
 1. Update the experiment issue with a TLDR and mark as successful using a label.
 1. Open a Model Issue to prepare the model and pipelines for production.
-2. Create a "Model" branch using Master as the base.
-3. Merge upstream changes from Master into your experiment branch and resolve any conflicts.
+2. Create a "Model" branch using Main as the base.
+3. Merge upstream changes from Main into your experiment branch and resolve any conflicts.
 4. Change the target of the Experiment PR to the Model branch.
 5. Merge the pull request to your Model branch and close the Experiment Issue.
 6. Delete the experiment branch after merging the PR.
