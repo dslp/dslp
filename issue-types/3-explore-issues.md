@@ -12,7 +12,7 @@ Traditionally, data science teams have three options here.
 
 The biggest challenge with exploratory work is figuring out when you should merge it? If you merge it, how do you decide when you should deprecate it? How can you ensure your exploration code is reproducible? What does it mean to "test" exploration?
 
-Because it's often more work than it's worth to test exploration code, we should be hesitant to commit it to to master.
+Because it's often more work than it's worth to test exploration code, we should be hesitant to commit it to our main branch.
 
 Additionally, if we merge all of our exploration, we will quickly get notebook sprawl and our repo will be an unreadable, unmaintainable mess.
 
