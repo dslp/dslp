@@ -4,7 +4,7 @@ As part of the Data Science Lifecycle Process we introduce some new branching st
 
 1.  A large portion of the code you write is throw-away; it's value lies in the knowledge gained rather than the functionality itself. 
 2. It's often difficult to know in advance what done looks like
-3. While we don't want to merge all of our code to master, we don't want to throw it away either.
+3. While we don't want to merge all of our code to main, we don't want to throw it away either.
    
 Rather than reinventing the wheel, we adapted existing branching strategies to the needs of the data science lifecyle. For most of the code we write, we'll be able to use standard Feature/Issue branching strategies. For the rest, we created some new branch types and workflows for using them.
 
@@ -14,7 +14,7 @@ See Also: [Example diagrams of branching patterns](./media/branching-patterns.pd
 - [Branch Types](#branch-types)
   - [Branch Types](#branch-types-1)
   - [Collaboration Branches](#collaboration-branches)
-    - [Master](#master)
+    - [Main](#main)
     - [Development (Optional)](#development-optional)
   - [Feature and Issue Branches](#feature-and-issue-branches)
     - [Naming Convention](#naming-convention)
@@ -52,15 +52,15 @@ See Also: [Example diagrams of branching patterns](./media/branching-patterns.pd
 
 Your collaboration branch(es) is (are) the primary branch(es) for your repository. They will be the target for your Pull Requests and the code in them will be what you ultimately ship.
 
-### Master
+### Main
 
-The Master branch is the primary collaboration branch. It is the source of truth for your repo. Everything in master should be shippable.
+The Main branch is the primary collaboration branch. It is the source of truth for your repo. Everything in Main should be shippable.
 
 ### Development (Optional)
 
-Many teams opt to have another collaboration branch called development. Whether you use this is up to your team. If you opt for a development branch, then development should be the target of your pull requests for all features instead of master.
+Many teams opt to have another collaboration branch called development. Whether you use this is up to your team. If you opt for a development branch, then development should be the target of your pull requests for all features instead of Main.
 
-You will then merge development to master per your team's workflow.
+You will then merge development to Main per your team's workflow.
 
 ## Feature and Issue Branches
 
@@ -100,7 +100,7 @@ The PR's for your data pipelines should target your collaboration branch.
 
 ### Best Practices
 
-- Once your pipeline code has been merged to master, use an orchestration and scheduling tool to run the pipelines on your data. 
+- Once your pipeline code has been merged to main, use an orchestration and scheduling tool to run the pipelines on your data. 
   - Register a new version your dataset after each merge to your collaboration branch
   - Set your input and output directories using parameters so that you can easily change them depending on where you deploy (test, dev, prod, etc.)
 - Include schema definition files, data dictionaries, and othe data documentation as part of the Pull Request when merging these branches. Data is less useful without documentation.
@@ -128,7 +128,7 @@ Because exploration is experimental and temporary in nature, we never merge it t
 
 ### Best Practices
 
-- Don't merge your exploration to master or you'll flood your repo. By creating PR's for these branches, you'll ensure that your work is saved for posterity. 
+- Don't merge your exploration to main or you'll flood your repo. By creating PR's for these branches, you'll ensure that your work is saved for posterity. 
 
 > It's very important to label your PR's and link them to relevant issues so that you can find them later after you've closed them.
 
@@ -168,8 +168,8 @@ If an experiment is successful and you want to start the deployment process:
 
 1. Update the experiment issue with a TLDR and mark as successful using a label.
 1. Open a Model Issue to prepare the model and pipelines for production.
-2. Create a "Model" branch using Master as the base.
-3. Merge upstream changes from Master into your experiment branch and resolve any conflicts.
+2. Create a "Model" branch using Main as the base.
+3. Merge upstream changes from Main into your experiment branch and resolve any conflicts.
 4. Change the target of the Experiment PR to the Model branch.
 5. Merge the pull request to your Model branch and close the Experiment Issue.
 6. Delete the experiment branch after merging the PR.
