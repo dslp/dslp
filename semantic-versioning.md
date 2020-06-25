@@ -45,16 +45,15 @@ Increment the minor version when:
 
 - You add new columns
 - A column is allowed to take on new values (new item types or categories)
-- Change the way a column is calculated, but does not change it's underlying meaning
+- Change the way a column is calculated, but not it's underlying meaning
 
 ### Patch Versions
 
-For datasets a patch should only be used in a few cases.
+For datasets a patch should be used whenever the data pipeline is rerun, but none of the underlying logic has changed.
 
-- Correcting an error in the data without changing meaning or calculations
-- Performance improvements
-- Adding enhancements to data validation tests
-- Updating descriptions and metadata
+- Running the data pipeline to add new data (monthly updates)
+- Correcting errors in the data without changing meaning or calculations (usually caused by upstream data source issues, not the pipeline itself).
+- Performance improvements (in case a performance improvement accidentally breaks something, you can roll it back and revert to a previous version)
 
 ### Before 1.0.0 Release
 
