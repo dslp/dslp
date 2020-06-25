@@ -45,7 +45,7 @@ Increment the minor version when:
 
 - You add new columns
 - A column is allowed to take on new values (new item types or categories)
-- Change the way a column is calculated, but not it's underlying meaning
+- Change the way a column is calculated, but not it's underlying meaning or representation (e.g. same type, scale, magnitude)
 
 ### Patch Versions
 
