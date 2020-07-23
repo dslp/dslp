@@ -64,7 +64,7 @@ Open explore issues throughout the project whenever you need to increase your un
 
 #### Linking Explore Issues 
 
-It's important to link your Explore issues to other issues (Ask, Data, Experiment, etc) to make sure you can find them later. You should link the explore issues based off of which worktype prompted their creation. For example, if you're exploring a dataset that you're getting from another source in order to build the pipeline, the explore issue should be linked the the data. If you're exploring data to figure out what target you should create or to validate assumptions, you should link to your Ask and Experiment issues.
+It's important to link your Explore issues to other issues (Ask, Data, Experiment, etc) to make sure you can find them later. You should link the explore issues based off of which worktype prompted their creation. For example, if you're exploring a dataset that you're getting from another source in order to build the pipeline, the explore issue should be linked to the data. If you're exploring data to figure out what target you should create or to validate assumptions, you should link to your Ask and Experiment issues.
 
 ### 3.1 Open an Explore Branch
 
