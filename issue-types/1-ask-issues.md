@@ -44,7 +44,7 @@ For example, if the goal is to improve customer retention, you should define how
 
 Eventually, you'll need to convert your key metrics into technical ones. You should be clear with which ones you're using. For example, if you're doing a classification problem, you should be clear whether you're using accuracy, F-score, AUC, etc. and why.
 
-Finally, you may want to include counterbalance metrics. For example, if your goal is to increase returns while minimzing risk.
+Finally, you may want to include counterbalance metrics. For example, if your goal is to increase returns while minimizing risk.
 
 #### Constraints
 
