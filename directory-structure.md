@@ -110,7 +110,7 @@ code/datasets
 ├── customer_churn
 │   ├── customer_churn.py
 │   ├── datasheet.yml
-│   └── schema.yaml
+│   └── schema.yml
 └── customer_purchase_history
     ├── customer_purchase_history.py
     ├── datasheet.yml
