@@ -116,3 +116,8 @@ code/datasets
     ├── datasheet.yml
     └── schema.yml
 ```
+
+## Optional Directories
+
+```
+├── mlflow     # create a root level directory named mlflow to hold all mlflow project files if using mlflow
