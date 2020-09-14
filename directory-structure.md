@@ -116,3 +116,11 @@ code/datasets
     ├── datasheet.yml
     └── schema.yml
 ```
+
+## Optional Directories
+
+There are many frameworks and tools that require their own directories. They should be added as necessary. Here are our suggestions.
+
+```
+├── mlprojects     # create a root level directory named mlprojects to hold all mlflow project files if using mlflow (or similar)
+```
