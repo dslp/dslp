@@ -122,5 +122,5 @@ code/datasets
 There are many frameworks and tools that require their own directories. They should be added as necessary. Here are our suggestions.
 
 ```
-├── mlflow     # create a root level directory named mlflow to hold all mlflow project files if using mlflow
+├── mlprojects     # create a root level directory named mlprojects to hold all mlflow project files if using mlflow (or similar)
 ```
