@@ -1,6 +1,6 @@
 # Navigating the Data Science Lifecycle Process
 
-It's important to realize that progress isn't linear in a data science project. Data Science projects are cyclical and experimental in nature. As your understanding of the data and problem increase, you'll often revisit earlier approaches and make adjustements. You may even modify the way you're asking the question to make your outcome more actionable. Because of this, it's possible to jump back and forth between virtually any of the steps. 
+It's important to realize that progress isn't linear in a data science project. Data Science projects are cyclical and experimental in nature. As your understanding of the data and problem increase, you'll often revisit earlier approaches and make adjustments. You may even modify the way you're asking the question to make your outcome more actionable. Because of this, it's possible to jump back and forth between virtually any of the steps. 
 
 However, to keep the documentation simple, we'll document the steps in the order they occur in the process. In practice you'll often jump between steps. As long as you understand what the goal of each step is, moving between the steps should be fairly intuitive.
 
